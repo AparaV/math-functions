@@ -1,5 +1,8 @@
-/** 
- ** MathFuncsLib.cpp
+/**
+ ** MathFuncsLib
+ ** Licensed under MIT License by Aparajithan Venkateswaran
+ ** 2017
+ **
  */
 
 #include "MathFuncsLib.h"
@@ -105,7 +108,7 @@ namespace Sequences {
 }
 
 namespace Arithmetic {
-	
+
 	//Digitize number
 	int* digitizeArray(int64_t n) {
 		int length = static_cast<int>(log10(n) + 1);

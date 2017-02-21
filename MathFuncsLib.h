@@ -1,5 +1,8 @@
 /**
- ** MathFuncsLib.h
+ ** MathFuncsLib
+ ** Licensed under MIT License by Aparajithan Venkateswaran
+ ** 2017
+ **
  */
 
 #pragma once
@@ -12,7 +15,7 @@ using std::int64_t;
 
 namespace Primes {
 	//All functions relating to prime numbers and primality tests
-	
+
 	//Returns a vector array of prime numbers
 	vector<int64_t> primeList(int64_t upperLimit);
 
@@ -28,14 +31,14 @@ namespace Primes {
 
 namespace Sequences {
 	//All functions relating to series and sequences
-	
+
 	//nth Fibonacci number
 	int64_t fibonacci(int64_t n);
 }
 
 namespace Arithmetic{
 	//Miscellaneous Arithmetic
-		
+
 	//Split number into digits
 	int* digitizeArray(int64_t n);
 	vector<int> digitizeVector(int64_t n);
