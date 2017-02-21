@@ -5,14 +5,15 @@
 #include "MathFuncsLib.h"
 #include <vector>
 #include <cstring>
+#include <cmath>
 #include <stdexcept>
 
 using namespace std;
 
-namespace Euler {
+namespace Primes {
 
 	//A vector array of prime numbers
-	vector<int64_t> Primes::primeList(int64_t upperLimit) {
+	vector<int64_t> primeList(int64_t upperLimit) {
 		vector<int64_t> primes;
 		primes.push_back(2);
 
@@ -35,7 +36,7 @@ namespace Euler {
 	}
 
 	//Boolean prime sieve - much faster than vector implementation
-	bool* Primes::primeSieve(int64_t size) {
+	bool* primeSieve(int64_t size) {
 		bool* prime = new bool[size + 1];
 		memset(prime, true, size + 1);				//faster than loops and vectors
 		prime[0] = false;
@@ -52,8 +53,11 @@ namespace Euler {
 	}
 
 	//Primality test
-	bool Primes::isPrime(int64_t n) {
-		for (int i = 2; i * i <= n; ++i) {
+	bool isPrime(int64_t n) {
+		if (n <= 1) {
+			return false;
+		}
+		for (int64_t i = 2; i * i <= n; ++i) {
 			if (n %i == 0) {
 				return false;
 			}
@@ -62,7 +66,7 @@ namespace Euler {
 	}
 
 	//Greatest prime factor
-	int64_t Primes::greatestPrimeFactor(int64_t num) {
+	int64_t greatestPrimeFactor(int64_t num) {
 		int64_t largestFactor = 0;
 		int64_t sqrtNum = sqrt(num) + 1;
 
@@ -77,5 +81,49 @@ namespace Euler {
 		}
 
 		return largestFactor;
+	}
+}
+
+namespace Sequences {
+
+	//nth Fibonacci number
+	int64_t fibonacci(int64_t n) {
+		int64_t a = 1, b = 1, c;
+		if (n <= 0) {
+			return -1;
+		}
+		if (n == 1 || n == 2) {
+			return a;
+		}
+		for (int i = 3; i <= n; ++i) {
+			c = a + b;
+			a = b;
+			b = c;
+		}
+		return c;
+	}
+}
+
+namespace Arithmetic {
+	
+	//Digitize number
+	int* digitizeArray(int64_t n) {
+		int length = static_cast<int>(log10(n) + 1);
+		int* digits = new int[length];
+		for (int i = length - 1; i >= 0; ++i) {
+			digits[i] = n % 10;
+			n /= 10;
+		}
+		return digits;
+	}
+	//Digitize number into vector
+	vector<int> digitizeVector(int64_t n) {
+		int length = static_cast<int>(log10(n) + 1);
+		vector<int> digits(length, 0);
+		for (int i = length - 1; i >= 0; ++i) {
+			digits[i] = n % 10;
+			n /= 10;
+		}
+		return digits;
 	}
 }

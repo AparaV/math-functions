@@ -1,0 +1,15 @@
+testing.cpp
+a.out
+
+#Visual Studio files
+/Debug
+/.vs
+MathFunctions.sln
+MathFunctions.VC.db
+MathFunctions.vcxproj
+MathFunctions.vcxprof.filters
+ReadMe.txt
+
+#Lib files
+*.a
+*.o
