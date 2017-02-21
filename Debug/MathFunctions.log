@@ -2,4 +2,5 @@
 c:\users\aparajithan\dropbox\mathfunctions\mathfuncslib.cpp(23): warning C4018: '<': signed/unsigned mismatch
 c:\users\aparajithan\dropbox\mathfunctions\mathfuncslib.cpp(39): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data
 c:\users\aparajithan\dropbox\mathfunctions\mathfuncslib.cpp(40): warning C4244: 'argument': conversion from 'int64_t' to 'std::size_t', possible loss of data
+c:\users\aparajithan\dropbox\mathfunctions\mathfuncslib.cpp(67): warning C4244: 'initializing': conversion from 'double' to 'int64_t', possible loss of data
   MathFunctions.vcxproj -> C:\Users\Aparajithan\Dropbox\MathFunctions\Debug\MathFunctions.lib

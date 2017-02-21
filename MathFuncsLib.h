@@ -17,5 +17,11 @@ namespace Euler{
 
 		//Returns a prime sieve of boolean values
 		bool* primeSieve(int64_t size);
+
+		//Primality test
+		bool isPrime(int64_t n);
+
+		//Greatest prime factor
+		int64_t greatestPrimeFactor(int64_t num);
 	};
 }

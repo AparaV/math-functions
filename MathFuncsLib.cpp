@@ -50,4 +50,32 @@ namespace Euler {
 		}
 		return prime;
 	}
+
+	//Primality test
+	bool Primes::isPrime(int64_t n) {
+		for (int i = 2; i * i <= n; ++i) {
+			if (n %i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	//Greatest prime factor
+	int64_t Primes::greatestPrimeFactor(int64_t num) {
+		int64_t largestFactor = 0;
+		int64_t sqrtNum = sqrt(num) + 1;
+
+		for (int64_t i = 2; i < sqrtNum; ++i) {
+			if (num % i == 0) {
+				largestFactor = i;
+				num /= i;
+				while (num %i == 0) {
+					num /= i;
+				}
+			}
+		}
+
+		return largestFactor;
+	}
 }
