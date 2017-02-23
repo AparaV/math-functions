@@ -21,8 +21,6 @@ namespace Primes {
 		primes.push_back(2);
 
 		for (int64_t i = 3; i <= upperLimit; i += 2) {
-
-			//Check for primality
 			bool prime = true;
 			for (int j = 0; j < primes.size() && primes[j] * primes[j] <= i; ++j) {
 				if (i % primes[j] == 0) {
@@ -105,6 +103,37 @@ namespace Sequences {
 		}
 		return c;
 	}
+	//Fibonacci List
+	int64_t* fibonacciList(int n) {
+		int64_t* list = new int64_t[n + 1];
+		list[0] = 0;
+		list[1] = 1;
+		for (int i = 2; i <= n; ++i) {
+			list[i] = list[i - 1] + list[i - 2];
+		}
+		return list;
+	}
+
+	//Sum Series
+	int64_t sumSeries(int size, int coeff) {
+		int64_t sum = 0;
+		if (coeff == 1) {
+			sum = size*(size + 1) / 2;
+		}
+		else if (coeff == 2) {
+			sum = size*(size + 1)*(2 * size + 1) / 6;
+		}
+		else if (coeff == 3) {
+			sum = size*(size + 1) / 2;
+			sum *= sum;
+		}
+		else {
+			for (int i = 1; i <= size; ++i) {
+				sum += pow(i, coeff);
+			}
+		}
+		return sum;
+	}
 }
 
 namespace Arithmetic {
@@ -128,5 +157,15 @@ namespace Arithmetic {
 			n /= 10;
 		}
 		return digits;
+	}
+
+	//Palindrome
+	bool isPalindrome(int64_t number, int base) {
+		int64_t reversed = 0, temp = number;
+		while (temp > 0) {
+			reversed = base * reversed + temp % base;
+			temp /= base;
+		}
+		return number == reversed;
 	}
 }

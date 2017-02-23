@@ -34,6 +34,11 @@ namespace Sequences {
 
 	//nth Fibonacci number
 	int64_t fibonacci(int64_t n);
+	int64_t* fibonacciList(int n);
+
+	//Sums
+	int64_t sumSeries(int size, int coeff);
+
 }
 
 namespace Arithmetic{
@@ -42,4 +47,7 @@ namespace Arithmetic{
 	//Split number into digits
 	int* digitizeArray(int64_t n);
 	vector<int> digitizeVector(int64_t n);
+
+	//Palindrome
+	bool isPalindrome(int64_t number, int base);
 }
