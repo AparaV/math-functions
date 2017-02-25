@@ -34,7 +34,7 @@ Working on it...
 
 ## To do (in no particular order)
 - [ ] Finding nth prime
-- [ ] Whether a number is pandigital
+- [x] Whether a number is pandigital
 - [ ] Whether a number is permutation of another number
 - [ ] Sum of multiples of a number
 - [ ] Whether 3 numbers form a triangle

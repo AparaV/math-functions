@@ -50,4 +50,10 @@ namespace Arithmetic{
 
 	//Palindrome
 	bool isPalindrome(int64_t number, int base);
+
+	//Pandigital
+	bool isPandigital(int64_t n, bool zero);
+
+	//Permutation
+	//bool isPermutation(int64_t n, int64_t m);
 }

@@ -168,4 +168,38 @@ namespace Arithmetic {
 		}
 		return number == reversed;
 	}
+
+	//Pandigital - adapted from http://stackoverflow.com/a/2485016/5055644
+	bool isPandigital(int64_t n, bool zero) {
+		int count = 0, digits = 0, x = 1, temp;
+		if (zero) {
+			x = 0;
+		}
+		while (n > 0) {
+			temp = digits;
+			digits |= (1 << (int)((n % 10) - x));
+			if (temp == digits) {
+				return false;
+			}
+			count++;
+			n /= 10;
+		}
+		return digits == (1 << count) - 1;
+	}
+
+	//Permutation
+	/*bool isPermutation(int64_t n, int64_t m) {
+		int A = 0, B = 0, temp;
+		while (n > 0) {
+			temp = A;
+			A ^= (1 << static_cast<int>((n % 10) - 1));
+			n /= 10;
+		}
+		while (m > 0) {
+			temp = B;
+			B ^= (1 << static_cast<int>((m % 10) - 1));
+			m /= 10;
+		}
+		return A == B;
+	}*/
 }
