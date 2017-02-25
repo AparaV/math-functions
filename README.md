@@ -30,7 +30,7 @@ $ g++ -std=c++11 main.cpp MathFuncsLib.a
 This should compile and run without any errors. And make sure you are using C++11 compiler
 
 ## Documentation
-Working on it...
+Check out the [wiki](https://github.com/AparaV/math-functions/wiki)
 
 ## To do (in no particular order)
 - [ ] Finding nth prime
