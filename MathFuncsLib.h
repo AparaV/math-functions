@@ -56,4 +56,7 @@ namespace Arithmetic{
 
 	//Permutation
 	//bool isPermutation(int64_t n, int64_t m);
+
+	//Perfect square
+	bool isPerfectSquare(int64_t n);
 }

@@ -202,4 +202,10 @@ namespace Arithmetic {
 		}
 		return A == B;
 	}*/
+
+	//Perfect square
+	bool isPerfectSquare(int64_t n) {
+		double x = sqrt(n);
+		return x == static_cast<int>(x);
+	}
 }
