@@ -140,6 +140,29 @@ namespace Sequences {
 		int64_t number = upperLimit / multiple;
 		return multiple * number * (number + 1) / 2;
 	}
+
+	//Factorials
+	int64_t factorial(unsigned int n) {
+		if (n <= 1) {
+			return 1;
+		}
+		int64_t prod = 1;
+		for (int i = 2; i <= n; ++i) {
+			prod *= i;
+		}
+		return prod;
+	}
+
+	int64_t* factorialList(unsigned int n) {
+		int64_t* list = new int64_t[n + 1];
+		list[0] = 1;
+		list[1] = 1;
+		for (int i = 2; i <= n; ++i) {
+			list[i] = list[i - 1] * i;
+		}
+		return list;
+	}
+
 }
 
 namespace Arithmetic {

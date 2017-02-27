@@ -42,6 +42,9 @@ namespace Sequences {
 	//Sum multiples
 	int64_t sumMultiples(int64_t upperLimit, int64_t multiple);
 
+	//Factorials
+	int64_t factorial(unsigned int n);
+	int64_t* factorialList(unsigned int n);
 }
 
 namespace Arithmetic{
