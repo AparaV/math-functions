@@ -39,6 +39,9 @@ namespace Sequences {
 	//Sums
 	int64_t sumSeries(int size, int coeff);
 
+	//Sum multiples
+	int64_t sumMultiples(int64_t upperLimit, int64_t multiple);
+
 }
 
 namespace Arithmetic{

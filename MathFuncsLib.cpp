@@ -134,6 +134,12 @@ namespace Sequences {
 		}
 		return sum;
 	}
+
+	//Sum multiples
+	int64_t sumMultiples(int64_t upperLimit, int64_t multiple) {
+		int64_t number = upperLimit / multiple;
+		return multiple * number * (number + 1) / 2;
+	}
 }
 
 namespace Arithmetic {
