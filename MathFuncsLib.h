@@ -6,6 +6,8 @@
  */
 
 #pragma once
+#ifndef MATH_FUNCTIONS_H
+#define MATH_FUNCTIONS_H
 
 #include <iostream>
 #include <vector>
@@ -69,3 +71,5 @@ namespace Arithmetic{
 	//Concatenate integers
 	int64_t concatInt(int64_t a, int64_t b);
 }
+
+#endif // !MATH_FUNCTIONS_H
