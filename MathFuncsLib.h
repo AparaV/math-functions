@@ -65,4 +65,7 @@ namespace Arithmetic{
 
 	//Perfect square
 	bool isPerfectSquare(int64_t n);
+
+	//Concatenate integers
+	int64_t concatInt(int64_t a, int64_t b);
 }

@@ -237,4 +237,14 @@ namespace Arithmetic {
 		double x = sqrt(n);
 		return x == static_cast<int>(x);
 	}
+
+	//Concatenate integers
+	int64_t concatInt(int64_t a, int64_t b) {
+		int temp = b;
+		while (temp > 0) {
+			a *= 10;
+			temp /= 10;
+		}
+		return a + b;
+	}
 }
