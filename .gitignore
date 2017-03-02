@@ -12,5 +12,4 @@ MathFunctions.vcxproj.filters
 ReadMe.txt
 
 #Lib files
-*.a
 *.o
