@@ -185,16 +185,6 @@ namespace Arithmetic {
 		}
 		return digits;
 	}
-	//Digitize number into vector
-	vector<int> digitizeVector(int64_t n) {
-		int length = static_cast<int>(log10(n) + 1);
-		vector<int> digits(length, 0);
-		for (int i = length - 1; i >= 0; ++i) {
-			digits[i] = n % 10;
-			n /= 10;
-		}
-		return digits;
-	}
 
 	//Palindrome
 	bool isPalindrome(int64_t number, int base) {

@@ -54,7 +54,6 @@ namespace Arithmetic{
 
 	//Split number into digits
 	int* digitizeArray(int64_t n);
-	vector<int> digitizeVector(int64_t n);
 
 	//Palindrome
 	bool isPalindrome(int64_t number, int base);
