@@ -178,11 +178,12 @@ namespace Arithmetic {
 	//Digitize number
 	int* digitizeArray(int64_t n) {
 		int length = static_cast<int>(log10(n) + 1);
-		int* digits = new int[length];
+		int* digits = new int[length + 1];
 		for (int i = length - 1; i >= 0; ++i) {
 			digits[i] = n % 10;
 			n /= 10;
 		}
+		digits[length] = -1;
 		return digits;
 	}
 
