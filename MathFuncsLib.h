@@ -73,7 +73,7 @@ namespace Arithmetic{
 }
 
 namespace privateFunctions{
-	int64_t* doubleArray(int64_t* a, int64_t* size);
+	int64_t* doubleArray(int64_t* a, int* size);
 }
 
 #endif // !MATH_FUNCTIONS_H
