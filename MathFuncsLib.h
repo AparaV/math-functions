@@ -19,7 +19,7 @@ namespace Primes {
 	//All functions relating to prime numbers and primality tests
 
 	//Returns a vector array of prime numbers
-	vector<int64_t> primeList(int64_t upperLimit);
+	int64_t* primeList(int64_t upperLimit);
 
 	//Returns a prime sieve of boolean values
 	bool* primeSieve(int64_t size);
@@ -70,6 +70,10 @@ namespace Arithmetic{
 
 	//Concatenate integers
 	int64_t concatInt(int64_t a, int64_t b);
+}
+
+namespace privateFunctions{
+	int64_t* doubleArray(int64_t* a, int64_t* size);
 }
 
 #endif // !MATH_FUNCTIONS_H

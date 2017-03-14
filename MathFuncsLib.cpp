@@ -16,8 +16,8 @@ using namespace std;
 namespace Primes {
 
 	//A vector array of prime numbers
-	vector<int64_t> primeList(int64_t upperLimit) {
-		vector<int64_t> primes;
+	int64_t* primeList(int64_t upperLimit) {
+		int64_t* primes;
 		primes.push_back(2);
 
 		for (int64_t i = 3; i <= upperLimit; i += 2) {
@@ -248,3 +248,19 @@ namespace Arithmetic {
 		return a + b;
 	}
 }
+
+/*Private Functions*/
+namespace privateFunctions {
+
+	//Array doubling
+	int64_t* doubleArray(int64_t* a, int64_t* size) {
+		int64_t* newArray = new int64_t[2 * (*size)];
+		for (int64_t i = 0; i < *size; ++i) {
+			newArray[i] = a[i];
+		}
+		(*size) *= 2;
+		delete[] a;
+		return newArray;
+	}
+
+} // end of namespaceprivateFunctions
