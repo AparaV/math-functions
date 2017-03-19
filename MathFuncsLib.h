@@ -76,6 +76,9 @@ namespace Arithmetic{
 
 	//Concatenate integers
 	int64_t concatInt(int64_t a, int64_t b);
+
+	//Divisors
+	int64_t* divisors(int64_t n, bool proper);
 }
 
 namespace Geometry {

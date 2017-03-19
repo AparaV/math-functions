@@ -300,6 +300,33 @@ namespace Arithmetic {
 		}
 		return a + b;
 	}
+
+	//Divisiors
+	int64_t* divisors(int64_t n, bool proper) {
+		int64_t* result = new int64_t[10];
+		int maxSize = 10, currSize = 1;
+		result[0] = 1;
+		for (int i = 2; i*i < n; ++i) {
+			if (n % i == 0) {
+				result[currSize++] = i;
+				if (currSize >= maxSize - 1) {
+					result = privateFunctions::doubleArray(result, &maxSize);
+				}
+				result[currSize++] = n / i;
+				if (currSize >= maxSize - 1) {
+					result = privateFunctions::doubleArray(result, &maxSize);
+				}
+			}
+		}
+		if (!proper) {
+			result[currSize] = n;
+			if (currSize >= maxSize - 1) {
+				result = privateFunctions::doubleArray(result, &maxSize);
+			}
+		}
+		result[currSize] = -1;
+		return result;
+	}
 }
 
 /*Geometry*/
