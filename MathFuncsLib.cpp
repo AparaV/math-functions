@@ -90,6 +90,44 @@ namespace Primes {
 
 		return largestFactor;
 	}
+
+	//nth prime
+	int64_t findPrime(int n) {
+		if (n <= 0) {
+			return -1;
+		}
+		if (n == 1) {
+			return 2;
+		}
+		if (n == 2) {
+			return 3;
+		}
+		int64_t prime;
+		int64_t* primes = new int64_t[n];
+		primes[1] = 2;
+		int maxSize = n, currSize = 1;
+		int counter = 1, curr = 3;
+		while (counter != n) {
+			bool isPrime = true;
+			for (int i = 1; i <= currSize; ++i) {
+				if (curr % primes[i] == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			if (isPrime) {
+				counter++;
+				primes[++currSize] = curr;
+				if (currSize >= maxSize - 1) {
+					primes = privateFunctions::doubleArray(primes, &maxSize);
+				}
+			}
+			curr += 2;
+		}
+		prime = primes[currSize];
+		delete[] primes;
+		return prime;
+	} // end of nthe prime
 }
 
 namespace Sequences {

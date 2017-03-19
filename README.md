@@ -9,7 +9,7 @@ Check out this [guide](https://github.com/AparaV/math-functions/wiki/1.-Installa
 Check out the [wiki](https://github.com/AparaV/math-functions/wiki)
 
 ## To do (in no particular order)
-- [ ] Finding nth prime
+- [x] Finding nth prime
 - [x] Whether a number is pandigital
 - [ ] Whether a number is permutation of another number
 - [x] Sum of multiples of a number

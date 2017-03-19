@@ -29,6 +29,9 @@ namespace Primes {
 
 	//Greatest prime factor
 	int64_t greatestPrimeFactor(int64_t num);
+
+	//nth Prime
+	int64_t findPrime(int n);
 }
 
 namespace Sequences {
