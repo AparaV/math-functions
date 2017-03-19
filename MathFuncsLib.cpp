@@ -128,7 +128,25 @@ namespace Primes {
 		prime = primes[currSize];
 		delete[] primes;
 		return prime;
-	} // end of nthe prime
+	} // end of nth prime
+
+	//Prime factors
+	int64_t countPrimeFactors(int64_t n) {
+		int64_t factors = 0;
+		for (int64_t i = 2; i <= sqrt(n) + 1; ++i) {
+			if (n % i == 0) {
+				factors++;
+				n /= i;
+				while (n % i == 0) {
+					n /= i;
+				}
+			}
+		}
+		if (n > 2) {
+			factors++;
+		}
+		return factors;
+	}
 }
 
 namespace Sequences {

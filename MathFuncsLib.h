@@ -32,7 +32,11 @@ namespace Primes {
 
 	//nth Prime
 	int64_t findPrime(int n);
-}
+
+	//Prime factors
+	int64_t countPrimeFactors(int64_t n);
+
+} // end of namespace prime
 
 namespace Sequences {
 	//All functions relating to series and sequences
