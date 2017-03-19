@@ -10,6 +10,7 @@
 #include <cstring>
 #include <cmath>
 #include <stdexcept>
+#include <sstream>
 
 using namespace std;
 
@@ -223,6 +224,22 @@ namespace Sequences {
 			count++;
 		}
 		return count;
+	}
+
+	//Champernowne's Constant
+	string champernowne(int n) {
+		int digits = 1, multiplier = 1, number = 0;
+		while (number < n) {
+			multiplier *= 10;
+			number += digits * (multiplier - 1);
+			digits++;
+		}
+		int upperLimit = multiplier - 1;
+		stringstream ss;
+		for (int i = 1; i <= n; ++i) {
+			ss << i;
+		}
+		return ss.str();
 	}
 
 } // end of sequences and series

@@ -18,7 +18,7 @@ Check out the [wiki](https://github.com/AparaV/math-functions/wiki)
 - [x] Divisors count (proper and improper)
 - [ ] Prime factorization and prime factors count
 - [x] Collatz Sequence
-- [ ] Champernowne's Constant
+- [x] Champernowne's Constant
 - [x] Factorials
 - [ ] Computations with days of the year
 - [ ] Fibonacci Index

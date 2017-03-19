@@ -54,7 +54,11 @@ namespace Sequences {
 	//Colatz Sequence
 	int64_t nextCollatz(int64_t n);
 	int64_t collatzLength(int n);
-}
+
+	//Champernowne's constant
+	string champernowne(int n);
+
+} // end of sequences and series
 
 namespace Arithmetic{
 	//Miscellaneous Arithmetic
