@@ -16,7 +16,7 @@ Check out the [wiki](https://github.com/AparaV/math-functions/wiki)
 - [x] Whether 3 numbers form a triangle
 - [x] Check for Pythagorean triplet
 - [x] Divisors count (proper and improper)
-- [ ] Prime factorization and prime factors count
+- [x] Prime factorization and prime factors count
 - [x] Collatz Sequence
 - [x] Champernowne's Constant
 - [x] Factorials

@@ -11,9 +11,12 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
 
 using std::vector;
 using std::int64_t;
+using std::map;
+using std::string;
 
 namespace Primes {
 	//All functions relating to prime numbers and primality tests
@@ -35,6 +38,7 @@ namespace Primes {
 
 	//Prime factors
 	int64_t countPrimeFactors(int64_t n);
+	map<int, int> primeFactors(int n);
 
 } // end of namespace prime
 

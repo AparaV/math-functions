@@ -11,6 +11,7 @@
 #include <cmath>
 #include <stdexcept>
 #include <sstream>
+#include <map>
 
 using namespace std;
 
@@ -144,6 +145,25 @@ namespace Primes {
 		}
 		if (n > 2) {
 			factors++;
+		}
+		return factors;
+	}
+
+	map<int, int> primeFactors(int n) {
+		map<int, int> factors;
+		int size = sqrt(n) + 1;
+		for (int i = 2; i <= size; ++i) {
+			if (n % i == 0) {
+				factors[i] = 1;
+				n /= i;
+				while (n % i == 0) {
+					factors[i]++;
+					n /= i;
+				}
+			}
+		}
+		if (n > 2) {
+			factors[n] = 1;
 		}
 		return factors;
 	}
