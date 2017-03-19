@@ -78,6 +78,9 @@ namespace Geometry {
 	
 	//Check for forming a triangle
 	bool isTriangle(int64_t a, int64_t b, int64_t c);
+
+	//pythagorean triplet
+	bool isRightTriangle(int64_t a, int64_t b, int64_t c);
 }
 
 namespace privateFunctions{

@@ -295,8 +295,21 @@ namespace Geometry {
 			return true;
 		}
 		return false;
-	}
+	} // end of check for triangle
 
+	//pythagorean triplet
+	bool isRightTriangle(int64_t a, int64_t b, int64_t c) {
+		if (a*a + b*b == c*c) {
+			return true;
+		}
+		else if (b*b + c*c == a*a) {
+			return true;
+		}
+		else if (c*c + a*a == b*b) {
+			return true;
+		}
+		return false;
+	} // end of right triangle
 } // end of geometry
 
 /*Private Functions*/

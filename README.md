@@ -14,7 +14,7 @@ Check out the [wiki](https://github.com/AparaV/math-functions/wiki)
 - [ ] Whether a number is permutation of another number
 - [x] Sum of multiples of a number
 - [x] Whether 3 numbers form a triangle
-- [ ] Check for Pythagorean triplet
+- [x] Check for Pythagorean triplet
 - [ ] Divisors count (proper and improper)
 - [ ] Prime factorization and prime factors count
 - [ ] Collatz Sequence
