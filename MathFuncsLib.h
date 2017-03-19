@@ -74,6 +74,12 @@ namespace Arithmetic{
 	int64_t concatInt(int64_t a, int64_t b);
 }
 
+namespace Geometry {
+	
+	//Check for forming a triangle
+	bool isTriangle(int64_t a, int64_t b, int64_t c);
+}
+
 namespace privateFunctions{
 	int64_t* doubleArray(int64_t* a, int* size);
 }

@@ -286,6 +286,19 @@ namespace Arithmetic {
 	}
 }
 
+/*Geometry*/
+namespace Geometry {
+
+	//check for triangle
+	bool isTriangle(int64_t a, int64_t b, int64_t c) {
+		if ((a + b > c) && (b + c > a) && (c + a > b)) {
+			return true;
+		}
+		return false;
+	}
+
+} // end of geometry
+
 /*Private Functions*/
 namespace privateFunctions {
 
