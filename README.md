@@ -17,13 +17,13 @@ Check out the [wiki](https://github.com/AparaV/math-functions/wiki)
 - [x] Check for Pythagorean triplet
 - [ ] Divisors count (proper and improper)
 - [ ] Prime factorization and prime factors count
-- [ ] Collatz Sequence
+- [x] Collatz Sequence
 - [ ] Champernowne's Constant
 - [x] Factorials
 - [ ] Computations with days of the year
 - [ ] Fibonacci Index
 - [ ] Combinatorics
-- [ ] Concatenating integers
+- [x] Concatenating integers
 - [x] Check for perfect square
 - [ ] Triangular, Pentagonal and Hexagonal numbers
 

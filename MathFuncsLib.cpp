@@ -209,7 +209,23 @@ namespace Sequences {
 		return list;
 	}
 
-}
+	//Collatz Sequence
+	int64_t nextCollatz(int64_t n) {
+		if (n % 2 == 0) {
+			return n / 2;
+		}
+		return 3 * n + 1;
+	}
+	int64_t collatzLength(int n) {
+		int64_t count = 1;
+		while (n != 1) {
+			n = Sequences::collatzLength(n);
+			count++;
+		}
+		return count;
+	}
+
+} // end of sequences and series
 
 namespace Arithmetic {
 

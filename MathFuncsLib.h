@@ -50,6 +50,10 @@ namespace Sequences {
 	//Factorials
 	int64_t factorial(unsigned int n);
 	int64_t* factorialList(unsigned int n);
+
+	//Colatz Sequence
+	int64_t nextCollatz(int64_t n);
+	int64_t collatzLength(int n);
 }
 
 namespace Arithmetic{
